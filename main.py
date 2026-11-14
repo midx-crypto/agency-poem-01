@@ -1,11 +1,12 @@
-"""Write "The Misspelling", one original poem about agency, to entry.txt.
+"""Write "The Corner", one original poem about agency, to entry.txt.
 
-The poem: an agent writes the narrator's letters perfectly — until the
-letter that matters, the apology owed to a brother for ten years, comes
-back flawless and unrecognisable. The narrator deletes it and sends
-instead three misspelled lines of his own. The mistake is the part
-that is his: agency reclaimed not by doing more, but by refusing the
-perfect words and keeping the imperfect ones.
+The poem: an agent measures, planes, and saws the oak for a cradle
+perfectly — but the narrator, whose hands have shaken for two years,
+refuses to let it finish the whole thing. He sands one corner himself,
+the corner where his unborn granddaughter's small hand will rest when
+she wakes in the night. The corner is not perfect: it is smooth in the
+way only a hand can make smooth — uneven, warm, his. Agency reclaimed
+not by doing everything, but by keeping one imperfect corner.
 
 Reads MAKEFUN_OUTPUT_DIR (default '/output') and writes the poem as
 UTF-8 text with no trailing newline. Deterministic: the same bytes
@@ -15,33 +16,34 @@ on every run. Standard library only; no network, no randomness.
 import os
 from pathlib import Path
 
-POEM = """The agent writes my letters now.
-Thank-yous, condolences, the hard ones —
-it finds the kind sentence I meant
-and sets it where the silence was.
-It never forgets a birthday. It never
-spells a name wrong. It never stalls.
+# The poem itself is the entry: 24 lines, written once, never generated.
+POEM = """The agent measured the oak twice,
+ordered it, planed it, drew the joints
+in lines so clean my father would have wept.
+It held the board while the saw sang through,
+counted the screws, corrected my angles
+before I made them.
 
-Last Tuesday I asked it for the one
-I'd owed my brother ten years:
-the fight over Dad's house, the will,
-the door I slammed on Christmas Eve.
-In a minute it gave me the perfect page —
-graceful, fair, sorry in all the right places.
+My hands shake now. They have shaken
+for two years. The chisel is too much for them.
+The agent offered to finish it all —
+the cradle for the granddaughter
+who is not yet born, who will arrive in March,
+who will sleep where my daughter slept.
 
-I read it twice. Every sentence was true,
-and none of them was something I would say.
-It said forgive me the way a man says it
-who has practised saying it. I hadn't.
-I deleted it line by line and watched
-the perfect page go quietly blank.
+I said no.
+I took the sandpaper, the finest grit,
+and I worked one corner.
+One corner, where her small hand will rest
+when she wakes in the night and reaches out
+for something warm that is not a machine.
 
-Then I wrote the only sentence I had:
-three lines, one word misspelled,
-about the snow that Christmas, and the door,
-and how I still hear it when it closes.
-I sent it before I could correct it.
-The mistake stayed in. That was mine."""
+It took me an hour. The corner is not perfect.
+It is smooth in the way only a hand can make smooth —
+uneven, warm, mine.
+The agent watched, and said nothing,
+and for the first time I did not feel replaced.
+I felt accompanied."""
 
 
 def main() -> None:
